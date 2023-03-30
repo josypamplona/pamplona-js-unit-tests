@@ -16,14 +16,11 @@ const average = (arrey) => {
   for (let index = 0; index < arrey.length; index += 1) {
   if ( typeof arrey[index] === "number") {
     sum += arrey[index];
-  } else { if ([]){sum = undefined;
-    break;
-   }else{
-    sum = undefined;
-    break;
+  } else {
+    return undefined;
   }
   }
-  console.log(sum);
+  if(arrey.length === 0){return undefined
   }
   let result;
   if ( typeof sum === "number"){
@@ -32,6 +29,8 @@ const average = (arrey) => {
   }
   return result;
   }
+
+  
 
 
 module.exports = average;
