@@ -37,15 +37,7 @@ const number = (arrey) =>{
 }
 ///////////////////////////////////////
 
-function printName() {
-  let nome = 'Tunico';
-  let idade = '30';
-  let travel = 'programação';
-  let localTravel = 'Trybe';
-  return ('Oi, meu nome é'+ ` ${nome}` + '! ' + 'Tenho' + ` ${idade} `+ 'anos, ' 
-  + 'trabalho na' + ` ${localTravel} ` + 'e mando muito bem em' + ` ${travel}`+'!' );
-}
-console.log(printName());
+
 
 /////////////////////////////////3,14159265358979323846  pi vezes o raio elevado ao quadrado (A = π r²). Aprenda a usar e
 
