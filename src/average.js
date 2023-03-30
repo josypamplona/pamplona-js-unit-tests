@@ -11,6 +11,29 @@
     - average([1, '2']) // Retorno: undefined;
 */
 
-const average = () => {};
+const average = (arrey) => {
+  let sum = 0;
+  for (let index = 0; index < arrey.length; index += 1) {
+  if ( typeof arrey[index] === "number") {
+    sum += arrey[index];
+  } else { if ([]){sum = undefined;
+    break;
+   }else{
+    sum = undefined;
+    break;
+  }
+  }
+  console.log(sum);
+  }
+  let result;
+  if ( typeof sum === "number"){
+    const divide = sum / arrey.length;
+    result = Math.round(divide);
+  }
+  return result;
+  }
+
 
 module.exports = average;
+
+
