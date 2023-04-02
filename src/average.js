@@ -11,8 +11,7 @@
     - average([1, 1]) // Retorno: 1;
     - average([1, '2']) // Retorno: undefined;
 */
-
-fconst average = (arrNumbers) => {
+const average = (arrNumbers) => {
   var newArr = 0;
   if (arrNumbers.length === 0) {
     return undefined;
