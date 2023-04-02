@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/cognitive-complexity */
 /*
   A função average recebe um array de tamanho variável e retorna a média dos valores recebidos.
   Caso a função receba algum valor não numérico ou um array vazio, o valor undefined deve ser retornado.
@@ -14,25 +15,21 @@
 const average = (arrey) => {
   let sum = 0;
   for (let index = 0; index < arrey.length; index += 1) {
-  if ( typeof arrey[index] === "number") {
+  if (typeof arrey[index] === 'number') {
     sum += arrey[index];
   } else {
     return undefined;
   }
   }
-  if(arrey.length === 0){return undefined
+  if (arrey.length === 0) {
+ return undefined;
   }
   let result;
-  if ( typeof sum === "number"){
+  if (typeof sum === 'number') {
     const divide = sum / arrey.length;
     result = Math.round(divide);
   }
   return result;
-  }
-
-  
-
+  };
 
 module.exports = average;
-
-

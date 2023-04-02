@@ -15,19 +15,15 @@
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
 
+// const goodPerson = 'Eita pessoa boa!';
 
-
-//   const createStudent = (estudante) =>{
-//   let name = 'estudante';
-// const feedback = (msg) => "Eita pessoa boa!"
+//  const createStudent = (estudante) => {
+//   estudante = ['estudant1', 'estudante2', 'estudante3']; 
+//   for (let index = 0; index < estudante; index += 1) {
+// const mensa = [index.lenght] + goodPerson;
 //   }
-//   function feedback(msg) {
-//   return "Eita pessoa boa!";
-// }
+// };
+// // eslint-disable-next-line sonarjs/no-use-of-empty-return-value
+// console.log(createStudent(`${[0]}${goodPerson}`));
 
-
-
-
-
-//  module.exports = createStudent;
-
+// module.exports = createStudent;
