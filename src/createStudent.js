@@ -1,3 +1,5 @@
+/* eslint-disable no-empty */
+/* eslint-disable import/no-self-import */
 /*
   A função createStudent recebe como parâmetro um nome, e retorna um objeto contendo duas chaves:
 
@@ -14,16 +16,14 @@
     estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
+const createStudent = require('../src/createStudent');
+const createStudent = (estudante) => {
+  const feedback = 'Eita pessoa boa!';
+  return {
+    name: estudante,
+    feedback: () => feedback,
+  };
+};
+console.log(createStudent('Leandrão, o Lobo Solitário').feedback());
 
-// const goodPerson = 'Eita pessoa boa!';
-
-//  const createStudent = (estudante) => {
-//   estudante = ['estudant1', 'estudante2', 'estudante3']; 
-//   for (let index = 0; index < estudante; index += 1) {
-// const mensa = [index.lenght] + goodPerson;
-//   }
-// };
-// // eslint-disable-next-line sonarjs/no-use-of-empty-return-value
-// console.log(createStudent(`${[0]}${goodPerson}`));
-
-// module.exports = createStudent;
+module.exports = createStudent;

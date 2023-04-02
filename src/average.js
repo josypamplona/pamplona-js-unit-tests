@@ -11,6 +11,7 @@
     - average([1, 1]) // Retorno: 1;
     - average([1, '2']) // Retorno: undefined;
 */
+
 function average(arrey) {
   let sum = 0;
   for (let index = 0; index < arrey.length; index += 1) {
