@@ -18,15 +18,14 @@
   Caso a função seja chamada sem nenhum parâmetro, o valor undefined deve ser retornado.
 */
 
-
-  function vqv(name,idade) {
-    if(name === undefined || idade === undefined){
+  function vqv(name, idade) {
+    if (name === undefined || idade === undefined) {
       return undefined;
     }
 return `Oi, meu nome é ${name}!
 Tenho ${idade} anos,
 trabalho na Trybe e mando muito em programação!
-#VQV!`    
-};
+#VQV!`;    
+}
 
 module.exports = vqv;
