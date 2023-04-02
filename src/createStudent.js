@@ -16,7 +16,6 @@
     estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
-const estu = require('../src/createStudent');
 
 const createStudent = (estudante) => {
   const feedback = 'Eita pessoa boa!';
